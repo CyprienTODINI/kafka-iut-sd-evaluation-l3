@@ -139,7 +139,7 @@ apply -f mygreaterp-db.yaml
 oc rsync ./db mygreaterp-db-xxxxxxxxxx-yyyyyy:/tmp
 oc rsh mygreaterp-db-xxxxxxxxxx-yyyyyy
 cd /tmp
-cat eurynome.sql | /usr/bin/mysql -uroot -pmygreaterp
+cat init-mygreaterp.sql | /usr/bin/mysql -uroot -pmygreaterp
 mysql -uroot -pmygreaterp
 grant all privileges on mygreaterp.* to 'mygreaterpuser'@'%';
 flush privileges;
