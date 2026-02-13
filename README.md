@@ -120,9 +120,9 @@ helm install my-kafka bitnami/kafka --set image.repository=bitnamilegacy/kafka
 2. La base de données source
 ```
 cd eurynome
-../oc apply -f eurynome-db.yaml
-../oc rsync ./db eurynome-db-794d47c75f-zfgbq:/tmp
-../oc rsh eurynome-db-794d47c75f-zfgbq
+../../oc apply -f eurynome-db.yaml
+../../oc rsync ./db eurynome-db-794d47c75f-zfgbq:/tmp
+../../oc rsh eurynome-db-794d47c75f-zfgbq
 cd /tmp
 cat eurynome.sql | /usr/bin/mysql -uroot -peurynome
 mysql -uroot -peurynome
@@ -135,9 +135,9 @@ cd ..
 2. La base de données destination
 ```
 cd mygreaterp
-../oc apply -f mygreaterp-db.yaml
-../oc rsync ./db mygreaterp-db-9b6c69677-9sfl9:/tmp
-../oc rsh mygreaterp-db-9b6c69677-9sfl9
+../../oc apply -f mygreaterp-db.yaml
+../../oc rsync ./db mygreaterp-db-9b6c69677-9sfl9:/tmp
+../../oc rsh mygreaterp-db-9b6c69677-9sfl9
 cd /tmp
 cat init-mygreaterp.sql | /usr/bin/mysql -uroot -pmygreaterp
 mysql -uroot -pmygreaterp
