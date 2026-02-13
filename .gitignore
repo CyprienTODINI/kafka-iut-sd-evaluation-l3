@@ -5,3 +5,4 @@ mygreaterp-db/*
 .idea/kafka-iut-sd-evaluation-l3.iml
 .idea/vcs.xml
 .idea/modules.xml
+./oc.exe
