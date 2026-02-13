@@ -1,3 +1,7 @@
+create database mygreaterp;
+
+use mygreaterp;
+
 create table addresses
 (
     id     varchar(36)  not null
