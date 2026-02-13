@@ -152,4 +152,7 @@ Pointant cette fois-ci sur votre nouveau repository.
 
 ## Notes de conception
 > [!TIP]
-> Ce paragraphe est le vôtre, vous pouvez y consigner vos notes, réflexion voire présenter succintement l'architecture de votre solution
+
+J'ai essayer de découper la table de base en 3 sous-tables, contacts, adress et contact_adress
+
+Pour récuperer le numéro de rue j'ai pris le premier mot (avant le premier espace) de adresse_rue, à l'inverse j'ai récuperer tout sauf le premier mot pour avoir la rue
